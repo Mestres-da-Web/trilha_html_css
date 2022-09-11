@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trabalhando com listas</title>
+  </head>
+  <script src="index.js"></script>
+
+  <body>
+    <b>Ordered list using numbers</b>
+    <ol>
+      <li>Step 1</li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+      <li>Step 4</li>
+    </ol>
+
+    <b>Ordered list using letters</b>
+    <ol type="A">
+      <li>Step 1</li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+      <li>Step 4</li>
+    </ol>
+
+    <b>Ordered list using roman numerals</b>
+    <ol type="I">
+      <li>Step 1</li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+      <li>Step 4</li>
+    </ol>
+
+    <b>Unrdered list</b>
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <ul id="list">
+      <li>List with one element</li>
+    </ul>
+
+    <button onclick="changeElement()">Change list</button>
+  </body>
+  <script>
+    const changeElement = () => {
+      const list = document.getElementById("list");
+      const data = ["Array item", "Array item", "Array item", "Array item"];
+
+      const listElements = data.map((item) => `<li>${item}</li>`).join("");
+
+      list.innerHTML = listElements;
+    };
+  </script>
+</html>
