@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Criando elementos</title>
+  </head>
+  <body>
+    <h1>Criando elementos</h1>
+
+    <ul id="list">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+
+    <button onclick="addItem()">Adicionar</button>
+    <button onclick="removeItem()">Remover item</button>
+
+    <button onclick="replaceItem()">Substituir item</button>
+    <script>
+      /* const list = document.getElementById("list");
+
+      const newElement = document.createElement("li");
+
+      newElement.innerText = "Elemento 4";
+
+      list.appendChild(newElement); */
+      function addItem() {
+        const list = document.getElementById("list");
+
+        const newElement = document.createElement("li");
+
+        newElement.innerText = `Elemento ${list.children.length + 1}`;
+
+        list.appendChild(newElement);
+      }
+
+      function removeItem() {
+        const list = document.getElementById("list");
+
+        list.removeChild(list.children[0]);
+      }
+
+      function replaceItem() {
+        const list = document.getElementById("list");
+
+        const newElement = document.createElement("li");
+
+        newElement.innerText = `Elemento substituido`;
+
+        list.replaceChild(newElement, list.children[1]);
+      }
+    </script>
+  </body>
+</html>
