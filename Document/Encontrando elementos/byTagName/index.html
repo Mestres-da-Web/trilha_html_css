@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capturando elemento byTagName</title>
+  </head>
+  <body>
+    <h1>Capturando elemento byTagName</h1>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+
+    <p>The second item of the list is: <b id="itemText"></b></p>
+
+    <script>
+      const collection = document.getElementsByTagName("li");
+      document.getElementById("itemText").innerHTML = collection[1].innerHTML;
+    </script>
+  </body>
+</html>

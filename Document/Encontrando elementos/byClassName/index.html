@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capturando elemento byClassName</title>
+  </head>
+  <body>
+    <h1>Capturando elemento byClassName</h1>
+
+    <p class="element">Element 1</p>
+    <p class="element">Element 2</p>
+    <p class="element">Element 3, I'm different</p>
+
+    <p>The third element have the following text: <b id="elementText"></b></p>
+
+    <script>
+      const collection = document.getElementsByClassName("element");
+
+      console.log(collection);
+
+      document.getElementById("elementText").innerText =
+        collection[2].innerText;
+    </script>
+  </body>
+</html>

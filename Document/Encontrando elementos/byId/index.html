@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capturando elemento byId</title>
+  </head>
+  <body>
+    <h1>Capturando elemento byId</h1>
+
+    <button id="button" onclick="changButtonText()">Submit</button>
+
+    <div id="div">
+      <p>Container</p>
+      <button onclick="changeDivColor()">Change color</button>
+    </div>
+
+    <script>
+      function changButtonText() {
+        const button = document.getElementById("button");
+        if (button) {
+          button.innerText = "New button text";
+        }
+      }
+
+      function changeDivColor() {
+        const div = document.getElementById("div");
+
+        if (div) {
+          div.style.backgroundColor = "blue";
+        }
+      }
+    </script>
+  </body>
+</html>
