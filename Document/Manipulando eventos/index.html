@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manipulando eventos</title>
+  </head>
+  <body>
+    <h1>Manipulando eventos</h1>
+
+    <input id="input" placeholder="Digite um texto" name="name" />
+    <p id="values"></p>
+
+    <button id="button" onclick="handleButtonClick()">Remove listener</button>
+
+    <script>
+      const input = document.getElementById("input");
+      const paragraph = document.getElementById("values");
+
+      input.addEventListener("input", updateValue);
+
+      function updateValue(e) {
+        console.log("Input event fired");
+
+        paragraph.innerText = `Você digitou: ${e.target.value}`;
+      }
+
+      function handleButtonClick() {
+        input.removeEventListener("input", updateValue);
+      }
+    </script>
+  </body>
+</html>
