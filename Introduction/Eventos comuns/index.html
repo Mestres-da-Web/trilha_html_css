@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eventos comuns</title>
+  </head>
+  <body onload="logText('onLoad')">
+    <h1>Eventos comuns</h1>
+    <h2
+      id="h2"
+      onclick="logText('onClick')"
+      onmouseover="logText('onMouseOver')"
+      onmouseleave="logText('onMouseLeave')"
+    >
+      Título
+    </h2>
+
+    <select id="select" onchange="handleSelectChange()">
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="Javascript">Javascript</option>
+    </select>
+    <p id="selectOption"></p>
+
+    <script>
+      function logText(text) {
+        console.log(text);
+      }
+
+      function handleSelectChange() {
+        console.log("onChange event fired");
+
+        var selectValue = document.getElementById("select").value;
+        document.getElementById(
+          "selectOption",
+        ).innerHTML = `Você selecionou: ${selectValue}`;
+      }
+    </script>
+  </body>
+</html>
