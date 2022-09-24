@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template, componentização e elementos personalizados</title>
+  </head>
+  <body>
+    <h1>Template, componentização e elementos personalizados</h1>
+    <template id="template">
+      <h2>Hello, world!</h2>
+      <p>Isso é um template</p>
+    </template>
+    <script>
+      const template = document.getElementById("template");
+
+      document.body.appendChild(template.content);
+    </script>
+  </body>
+</html>
