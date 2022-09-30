@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto</title>
+  </head>
+  <body>
+    <h1>Projeto</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./" target="_self">Inicio</a></li>
+          <li><a href="./pages/Contact/" target="_self">Contato</a></li>
+          <li><a href="./pages/Gallery/" target="_self">Galeria</a></li>
+          <li><a href="./pages/Products/" target="_self">Produtos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" /><br />
+
+    <label for="birthdate">Data de nascimento:</label>
+    <input type="date" id="birthdate" /><br />
+
+    <button onclick="addDataToTable()">Enviar</button>
+
+    <table id="table">
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Nascimento</th>
+      </tr>
+      <tr>
+        <td>Jancer</td>
+        <td>test@test.com</td>
+        <td>10/10/10</td>
+      </tr>
+    </table>
+    <script>
+      const addDataToTable = () => {
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const birthDateInput = document.getElementById("birthdate");
+
+        const table = document.getElementById("table");
+
+        const tableRow = document.createElement("tr");
+
+        tableRow.innerHTML = `
+          <td>${nameInput.value}</td> 
+          <td>${emailInput.value}</td> 
+          <td>${birthDateInput.value}</td> 
+        `;
+        table.appendChild(tableRow);
+      };
+    </script>
+  </body>
+</html>
