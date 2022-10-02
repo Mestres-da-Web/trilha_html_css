@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estrutura de um formulário</title>
+  </head>
+  <body>
+    <h1>Estrutura de um formulário</h1>
+
+    <form onsubmit="onSubmit(event)">
+      <input type="text" name="first" id="first" /><br />
+      <input type="text" name="last" id="last" /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function onSubmit(e) {
+        e.preventDefault();
+        console.log(e);
+      }
+    </script>
+  </body>
+</html>
