@@ -1,0 +1,17 @@
+* {
+  --primary: #0080ff;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+h2 {
+  color: var(--primary);
+}
+
+p {
+  --secondary: #6f00ff;
+  color: var(--secondary);
+}
