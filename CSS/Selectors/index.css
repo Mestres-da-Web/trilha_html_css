@@ -1,0 +1,45 @@
+p { 
+  color: red;
+  text-align: center;
+}
+
+#elementID {
+  color: red;
+  text-align: center;
+}
+
+.elementClass {
+  color: red;
+  text-align: center;
+}
+
+p.elementClass {
+  color: red;
+  text-align: center;
+}
+
+* {
+  color: red;
+  text-align: center;
+}
+
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
