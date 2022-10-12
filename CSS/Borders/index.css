@@ -1,0 +1,23 @@
+p {
+  border-style: solid;
+
+  /* Width and color*/
+  border-width: 2px 4px;
+  border-color: purple green yellow red;
+
+  /* Individual Sides */
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  /* Same as */
+  border-style: dotted solid;
+
+  /* Shorthand */
+  border: 5px solid purple;
+  border-left: 6px solid purple;
+  border-top: 6px solid purple;
+
+  /* Radius */
+  border-radius: 5px;
+}
