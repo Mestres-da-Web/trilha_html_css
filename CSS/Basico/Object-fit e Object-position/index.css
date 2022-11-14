@@ -1,0 +1,11 @@
+ img {
+   width: 800px;
+   height: 800px;
+   background-color: red;
+
+   object-fit: none;
+   /* contain; fill; cover; none; scale-down*/
+
+
+   /* object-position: top right; */
+ }
