@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keyframes</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Keyframes</h1>
+
+    <div class="square"></div>
+
+    <button id="button">Toggle animation</button>
+
+    <script>
+      const button = document.getElementById("button");
+      button.addEventListener("click", () => {
+        const square = document.getElementsByClassName("square")[0];
+        square.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

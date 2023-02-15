@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* Default is row */
+  /* flex-wrap: wrap; */
+  /* Default nowrap */
+  /* flex-flow: row wrap; */
+  /* justify-content: center; */
+  /* Default flex-start */
+  /* align-items: center; */
+  /* Default stretch */
+  /* align-content */
+  /* Modifies the behavior of flex-wrap */
+  background-color: aqua;
+  height: 200px
+}
+
+.item {
+  border: 1px solid;
+  width: 50px;
+  margin: 5px;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+}

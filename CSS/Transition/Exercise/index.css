@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.navigation-container {
+  background-color: #0e0e0e;
+  font-size: 12px;
+  padding: 2em;
+  text-transform: uppercase;
+}
+
+.navigation-container li {
+  display: inline;
+  margin-left: 5em;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+
+.nav-item.active {
+  color: #21ff85;
+}
+
+.nav-item:not(.active):hover {
+  color: #21ff85;
+}
+
+
+
+
+/* transition: transition-property, transition-duration, 
+transition-timing-function // DEFAULT ease - transition-delay */
+
+/* transition: margin-right 2s; */
+/* transition: margin-right 2s .5s; */
+/* transition: margin-right 2s ease-in-out; */
+/* transition: margin-right 2s ease-in-out .5s; */
+/* transition: margin-right 2s, color 1s; */
+/* transition: all 1s ease-out; */

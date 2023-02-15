@@ -1,5 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto'
+} */
+
+/* font-style */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
 p {
   color: blue;
+
   /* text-align: center; */
   /* text-align-last: right; */
   /* direction: rtl; */
@@ -35,4 +49,9 @@ p {
   /*  text-shadow: 2px 2px 5px red; */
   /* dispalce, displace, blur, color */
 
+}
+
+.test {
+  display: inline;
+  vertical-align: top;
 }

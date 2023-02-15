@@ -1,0 +1,26 @@
+.flex-container {
+  background-color: aqua;
+  height: 200px;
+  display: flex;
+}
+
+.item {
+  border: 1px solid;
+  width: 50px;
+  margin: 5px;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+  order: ;
+  flex-grow: ;
+  /* Default 0 */
+  flex-shrink: ;
+  /* Defalut 1 */
+  flex-basis: ;
+  /* Initial length */
+  flex: ;
+  /* Shorthand */
+  align-self: ;
+  /* Overrides align-items */
+
+}

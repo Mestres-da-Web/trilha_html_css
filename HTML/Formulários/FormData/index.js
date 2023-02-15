@@ -10,5 +10,5 @@ form.addEventListener("submit", (e) => {
     console.log(p);
   }
 
-  console.log(Object.fromEntries(formData));
+  /* console.log(Object.fromEntries(formData)); */
 });

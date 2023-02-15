@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  /* max-width: 33%; */
+}
+
+.item {
+  width: 100%;
+  border: 10px white solid;
+}
+
+.variant1 {
+  background-color: blue;
+  height: 250px;
+}
+
+.variant2 {
+  background-color: green;
+  height: 300px;
+}
+
+.variant3 {
+  background-color: yellow;
+  height: 100px;
+}
+
+.variant4 {
+  background-color: red;
+  height: 140px;
+}
+
+.variant5 {
+
+  background-color: purple;
+  height: 80px;
+}

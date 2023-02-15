@@ -1,0 +1,9 @@
+.square {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+
+  /* transform: rotateX(120deg); */
+  /* transform: rotateY(120deg); */
+  transform: rotateZ(120deg);
+}

@@ -15,9 +15,11 @@ console.log(formData.get("last"));
 console.log(formData.delete("last"));
 console.log(formData.has("last"));
 
-formData.forEach((item) => console.log(item));
+/* formData.forEach((item) => console.log("Foreach", item)); */
 
-for (const p of formData) {
+/* for (const p of formData) {
   console.log(p);
-}
+} */
 //for (const p of myFormData.entries())
+
+console.log(Object.fromEntries(formData));
